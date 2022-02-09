@@ -1,0 +1,8 @@
+Etch-a-sketch todo list: 
+
+1. set up hover effect that changes grid color
+2. Button to clear
+3. slider to change grid size
+
+4. Optional: 
+4.1 Add RGB, so that each grid after hover turns to a different color
