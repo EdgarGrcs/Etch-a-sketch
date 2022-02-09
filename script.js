@@ -4,6 +4,11 @@ const container = document.getElementById("container");
 let rows = document.getElementsByClassName("gridRow");
 let cells = document.getElementsByClassName("cell");
 
+
+let output = document.getElementById("myRange");
+
+console.log(output.value);
+
 // Creates a default grid sized 16x16
 function defaultGrid() {
     makeRows(16);
@@ -36,7 +41,7 @@ function makeColumns(cellNum) {
     };
 };
 
-makeRows(8, 8);
+makeRows(8,8);
 
 
 

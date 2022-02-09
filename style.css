@@ -1,3 +1,120 @@
+.titleText {
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight:bold;
+}
+
+/*Options menu*/
+
+.options_menu {
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  border: 2px solid grey;
+  border-radius:25px;
+  
+}
+
+.options_menu_children {
+  display:flex;
+  align-items:center;
+  
+}
+
+button{
+  background-color:#d3d3d3;
+  border:none;
+  color:black;
+  font-weight:bold;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 15px;
+  text-align:center;
+}
+
+.rgb_button_animated{
+  background: linear-gradient(270deg, #ff0000, #ffcd00, #23ff00, #00f2ff, #003eff, #af00ff, #ff009b);
+  background-size: 1400% 1400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+/*Slider START*/
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #4d4d4d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/*Slider END*/
+
+
+
+/*Color picker*/
+.color_picker {
+  overflow:hidden;
+  background-color:inherit;
+  padding: 0;
+  border: none;
+  box-shadow:none;
+  border-radius: 50%;
+  display:inline-block;
+  width: 5rem;
+  height: 5rem;
+}
+
+
+/*the nitty griddy stuff*/
+
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
@@ -10,13 +127,13 @@
   
   #container {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+   
   }
   
   .grid-item {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    
+    padding:25px;
+    border: 1px solid #ddd;   
   }
