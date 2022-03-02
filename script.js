@@ -3,19 +3,31 @@
 //////////////////////////////////////////////////////////////
 
 let container = document.querySelector(".container");
-let size = parseInt(window.getComputedStyle(container).width, 10)
+let clearButton = document.querySelector(".clear-button");
 
-function createGrid(gridSize) {
-  for (let i = 0; i < gridSize ** 2; i++) {
-    let gridBlock = document.createElement("div");
-  
-    gridBlock.classList.add("box");
-
-    gridBlock.addEventListener("mouseover", changeGridColor);
-    container.appendChild(gridBlock);
+function createGrid (gridSize = 16){
+  for (let i = 0; i < gridSize ** 2; i++){
+    let columnRow = document.createElement("div");
+    columnRow.classList.add("box");
+    columnRow.addEventListener("mouseover", changeGridColor);
+    container.appendChild(columnRow);
   }
 }
 
-function changeGridColor() {}
 
-createGrid(16);
+function changeGridColor(e) {
+
+  e.target.style.backgroundColor = "red";
+}
+
+clearButton.addEventListener("click", clearEverything);
+
+function clearEverything (e) {
+
+
+console.log("hello World");
+
+  }
+
+
+
