@@ -9,7 +9,7 @@
 
 /*Options menu*/
 
-.options_menu {
+/*.options_menu {
   align-items:center;
   justify-content:center;
   display:flex;
@@ -75,7 +75,7 @@ button:active {
 
 /*Slider START*/
 
-.slider {
+/*.slider {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -110,7 +110,7 @@ button:active {
 
 
 /*Color picker*/
-.color_picker {
+/*.color_picker {
   overflow:hidden;
   background-color:inherit;
   padding: 0;
@@ -125,25 +125,17 @@ button:active {
 
 /*the nitty griddy stuff*/
 
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-  }
+.container {
+  display:inline-grid;
+}
 
-  .box {
-    display:flex;
-    justify-content:center;
-  }
-  
-  #container {
-    display: grid;
-    grid-gap: 0;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-   
-  }
-  
-  .grid-item {
-    padding:25px;
-    border: 1px solid #ddd;   
-  }
+
+.box {
+  border-bottom: 2px solid red;
+}
+
+
+
+
+
+
