@@ -14,20 +14,22 @@ function createGrid (gridSize = 16){
   }
 }
 
-
 function changeGridColor(e) {
 
   e.target.style.backgroundColor = "red";
 }
 
+
 clearButton.addEventListener("click", clearEverything);
 
-function clearEverything (e) {
+function clearEverything () {
+  const gridBox = document.getElementsByClassName("box");
+
+  Array.from(gridBox).forEach(box =>
+  box.style.background = "white")
+}
 
 
-console.log("hello World");
 
-  }
-
-
+createGrid();
 
