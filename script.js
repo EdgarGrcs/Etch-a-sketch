@@ -2,8 +2,10 @@
 
 //////////////////////////////////////////////////////////////
 
-let container = document.querySelector(".container");
-let clearButton = document.querySelector(".clear-button");
+const container = document.querySelector(".container");
+const clearButton = document.querySelector(".clear-button");
+const rgbButton = document.querySelector(".rgb_button");
+
 
 function createGrid (gridSize = 16){
   for (let i = 0; i < gridSize ** 2; i++){
@@ -14,13 +16,19 @@ function createGrid (gridSize = 16){
   }
 }
 
+
+
 function changeGridColor(e) {
 
   e.target.style.backgroundColor = "red";
+
 }
 
 
 clearButton.addEventListener("click", clearEverything);
+
+
+
 
 function clearEverything () {
   const gridBox = document.getElementsByClassName("box");

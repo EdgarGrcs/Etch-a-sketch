@@ -143,14 +143,118 @@ button:active {
   margin-top: 5%;
 }
 
+.color_container{
+  justify-content:center;
+  border: 5px solid black;
+  border-radius:5px;
+  height: 575px;
+  width: 150px;
+  display:flex;
+  margin-right: 2%;
+}
+
+.choose_color{
+  display:block;
+  justify-content:center;
+  margin-top: 30px;
+  width: 100px;
+
+}
+
+.boxes {
+  height: 30px;
+  width: 30px;
+  border: 2px solid black;
+}
+
+.colors{
+  display:flex;
+  gap: 10px;
+  height: 10px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.colors1{
+  display:flex;
+  gap: 10px;
+  height: 10px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.colors2{
+  display:flex;
+  gap: 10px;
+  height: 10px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.colors3{
+  display:flex;
+  gap: 10px;
+  height: 10px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.colors4{
+  display:flex;
+  gap: 10px;
+  height: 10px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.red-box{
+  background-color:red;
+
+}
+
+.blue-box{
+  background-color:blue;
+}
+.green-box{
+  background-color:green;
+}
+.orange-box{
+  background-color:orange;
+}
+.purple-box{
+  background-color:purple;
+}
+.pink-box{
+  background-color:pink;
+}
+.brown-box{
+  background-color:brown;
+}
+.yellow-box{
+  background-color:yellow;
+}
+.white-box{
+  background-color:white;
+}
+.black-box{
+  background-color:black;
+}
+
 .container {
   display: inline-grid;
   grid-template-columns: repeat(16,2fr);
-  grid-template-rows: repeat( 16,2fr);
+  grid-template-rows: repeat(16,2fr);
   border: 5px solid black;
   border-radius: 5px;
   height: 575px;
   width: 575px;
+  margin-right: 12%;
 
 
 
