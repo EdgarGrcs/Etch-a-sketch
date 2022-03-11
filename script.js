@@ -4,7 +4,9 @@
 
 const container = document.querySelector(".container");
 const clearButton = document.querySelector(".clear-button");
+const slider = document.querySelector(".range_slider");
 const rgbButton = document.querySelector(".rgb_button");
+
 
 
 function createGrid (gridSize = 16){
@@ -20,14 +22,28 @@ function createGrid (gridSize = 16){
 
 function changeGridColor(e) {
 
-  e.target.style.backgroundColor = "red";
+  if (setRainbow === true){
+    e.target.style.backGroundColor = "rgba(255,255,255,0)";
+  }
+
+  e.target.style.backgroundColor = "grey";
 
 }
 
-
+rgbButton.addEventListener("click",setRainbow);
 clearButton.addEventListener("click", clearEverything);
 
+let rainbow = false;
+function setRainbow () {
 
+  if (rainbow === false){
+    return true;
+  }
+  if (rainbow === true){
+    return false;
+  }
+
+}
 
 
 function clearEverything () {

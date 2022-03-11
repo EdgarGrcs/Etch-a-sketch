@@ -10,7 +10,9 @@
   </head>
   <body>
     <div class="titleText">Etch-a-sketch!</div>
-<div class="options-wrapper">
+
+  <div class="options_container_wrapper">
+    <div class="options-wrapper">
     <div class="options_menu">
       <div class="options_menu_children">
         <div class="clear-button">
@@ -21,54 +23,25 @@
             <div class="rgb_button_animated">RGB!</div>
           </button>
         </div>
-        <div class="color_picker">
-          <input type="color" class="color_picker" />
-        </div>
+
         <div class="range_slider">
           <input
             type="range"
             min="1"
             max="100"
-            value="50"
-            class="slider"
-            id="myRange"
+            value="16"
+            id="slider"
             oninput="this.nextElementSibling.value = this.value"
           />
-          <output class="output">50</output>
+          <output class="output">16</output>
         </div>
       </div>
     </div>
 </div>
     <div class="around-container">
-      <div class="color_container">
-        <div class="choose_color">
-          <div class="colors">
-            <div class="red-box boxes"></div>
-            <div class="blue-box boxes"></div>
-          </div>
-          <div class="colors1">
-            <div class="green-box boxes"></div>
-            <div class="orange-box boxes"></div>
-          </div>
-          <div class="colors2">
-            <div class="purple-box boxes"></div>
-            <div class="pink-box boxes"></div>
-          </div>
-          <div class="colors3">
-            <div class="brown-box boxes"></div>
-            <div class="yellow-box boxes"></div>
-          </div>
-          <div class="colors4">
-            <div class="white-box boxes"></div>
-            <div class="black-box boxes"></div>
-          </div>
 
-        </div>
-        <div>
-
-        </div>
-      </div>
     <div class="container"></div>
     </div>
+  </div>
   </body>
 </html>
