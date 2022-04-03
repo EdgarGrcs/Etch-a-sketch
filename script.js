@@ -22,22 +22,32 @@ rgbButton.addEventListener("click", changeColorValue);
 
 let counter = 0;
 
-function changeColorValue(e){
+function changeColorValue(){
 
   const gridBox = document.getElementsByClassName("box");
 
 if (counter % 2 === 0) {
-  console.log( " rgb" + counter)
+  Array.from(gridBox).forEach(box =>
+      box.removeEventListener("mouseover", gridColor));
+
+
   Array.from(gridBox).forEach(box =>
       box.addEventListener("mouseover", rainbowMode));
 }
 
 // this doesnt change the color back to grey, why?
 if (counter % 2 !== 0){
-  console.log( "no rgb" + counter)
+  Array.from(gridBox).forEach(box =>
+      box.removeEventListener("mouseover", rainbowMode));
+
   Array.from(gridBox).forEach(box =>
       box.addEventListener("mouseover", gridColor));
 }
+
+
+
+
+
 counter++
 }
 
