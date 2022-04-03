@@ -8,21 +8,42 @@ const rgbButton = document.querySelector(".rgb_button");
 const userInput = document.getElementById("quantity");
 
 
-
+// creates a 16x16 grid
 function createGrid (gridSize = 16){
   for (let i = 0; i < gridSize ** 2; i++){
     let columnRow = document.createElement("div");
     columnRow.classList.add("box");
-    columnRow.addEventListener("mouseover", gridColor);
+    columnRow.addEventListener("mouseover",  gridColor);
     container.appendChild(columnRow);
   }
 }
 
-rgbButton.addEventListener("change", changeGridColor);
+rgbButton.addEventListener("click", changeColorValue);
+
+let counter = 0;
+
+function changeColorValue(e){
+
+  const gridBox = document.getElementsByClassName("box");
+
+if (counter % 2 === 0) {
+  console.log( " rgb" + counter)
+  Array.from(gridBox).forEach(box =>
+      box.addEventListener("mouseover", rainbowMode));
+}
+
+// this doesnt change the color back to grey, why?
+if (counter % 2 !== 0){
+  console.log( "no rgb" + counter)
+  Array.from(gridBox).forEach(box =>
+      box.addEventListener("mouseover", gridColor));
+}
+counter++
+}
 
 
 
-function changeGridColor(e){
+function rainbowMode(e) {
   let color = `rgb(${[0, 0, 0].map(channel => {
     return Math.floor(Math.random() * 256);
   }).join(',')})`
@@ -30,10 +51,6 @@ function changeGridColor(e){
     backgroundColor : color
   });
 }
-
-
-
-
 
 
 function updateGrid()  {
@@ -48,14 +65,13 @@ function updateGrid()  {
   for (let i = 0; i < userInput.value * userInput.value; i++){
     let columnRow = document.createElement("div");
     columnRow.classList.add("box");
-    columnRow.addEventListener("mouseover",gridColor);
+    columnRow.addEventListener("mouseover", gridColor);
     container.appendChild(columnRow);
   }
 }
 
 
 userInput.addEventListener("change", updateGrid);
-
 
 function gridColor(e) {
   e.target.style.backgroundColor = "grey";
@@ -64,14 +80,13 @@ function gridColor(e) {
 
 clearButton.addEventListener("click", clearEverything);
 
-
-
-
 function clearEverything () {
   const gridBox = document.getElementsByClassName("box");
 
   Array.from(gridBox).forEach(box =>
   box.style.background = "white")
+
+
 }
 
 
