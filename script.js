@@ -1,12 +1,14 @@
-
-
-//////////////////////////////////////////////////////////////
-
 const container = document.querySelector(".container");
 const clearButton = document.querySelector(".clear-button");
 const rgbButton = document.querySelector(".rgb_button");
-const userInput = document.getElementById("quantity");
+const userInput = document.getElementById("myRange");
 
+const output = document.getElementById("range");
+output.innerHTML = userInput.value;
+
+userInput.oninput =function(){
+  output.innerHTML = this.value;
+}
 
 // creates a 16x16 grid
 function createGrid (gridSize = 16){
@@ -29,29 +31,18 @@ function changeColorValue(){
 if (counter % 2 === 0) {
   Array.from(gridBox).forEach(box =>
       box.removeEventListener("mouseover", gridColor));
-
-
   Array.from(gridBox).forEach(box =>
       box.addEventListener("mouseover", rainbowMode));
 }
-
-// this doesnt change the color back to grey, why?
 if (counter % 2 !== 0){
   Array.from(gridBox).forEach(box =>
       box.removeEventListener("mouseover", rainbowMode));
-
   Array.from(gridBox).forEach(box =>
       box.addEventListener("mouseover", gridColor));
 }
 
-
-
-
-
 counter++
 }
-
-
 
 function rainbowMode(e) {
   let color = `rgb(${[0, 0, 0].map(channel => {
@@ -61,7 +52,6 @@ function rainbowMode(e) {
     backgroundColor : color
   });
 }
-
 
 function updateGrid()  {
   container.innerHTML = "";
@@ -80,23 +70,18 @@ function updateGrid()  {
   }
 }
 
-
 userInput.addEventListener("change", updateGrid);
 
 function gridColor(e) {
   e.target.style.backgroundColor = "grey";
 }
 
-
 clearButton.addEventListener("click", clearEverything);
 
 function clearEverything () {
   const gridBox = document.getElementsByClassName("box");
-
   Array.from(gridBox).forEach(box =>
   box.style.background = "white")
-
-
 }
 
 
