@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de571ee4-5c48-4c3e-ad72-1958095d1633" name="Changes" comment="remove unnecessary css code">
+    <list default="true" id="de571ee4-5c48-4c3e-ad72-1958095d1633" name="Changes" comment="add slider, remove input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,11 @@
       <workItem from="1646342918799" duration="510000" />
       <workItem from="1646519152559" duration="3504000" />
       <workItem from="1647035669956" duration="1747000" />
-      <workItem from="1647205385441" duration="2356000" />
+      <workItem from="1647205385441" duration="2754000" />
+      <workItem from="1649014488224" duration="6520000" />
+      <workItem from="1649021152367" duration="241000" />
+      <workItem from="1649065994459" duration="1813000" />
+      <workItem from="1649167224527" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="add grid, color change function">
       <created>1646262425880</created>
@@ -92,7 +95,35 @@
       <option name="project" value="LOCAL" />
       <updated>1647037041556</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add userInput, remove slider, add changable grid sizes">
+      <created>1647207814697</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647207814697</updated>
+    </task>
+    <task id="LOCAL-00007" summary="remove changeGridColor, add changeColorValue">
+      <created>1649019769566</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649019769566</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add removeEventListener for gridColor, rainbowMode">
+      <created>1649020867664</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649020867664</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add slider, remove input">
+      <created>1649067412313</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649067412313</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +146,10 @@
     <MESSAGE value="added colors to choose from" />
     <MESSAGE value="remove colors, add grey color, remove color picker, center div" />
     <MESSAGE value="remove unnecessary css code" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary css code" />
+    <MESSAGE value="add userInput, remove slider, add changable grid sizes" />
+    <MESSAGE value="remove changeGridColor, add changeColorValue" />
+    <MESSAGE value="add removeEventListener for gridColor, rainbowMode" />
+    <MESSAGE value="add slider, remove input" />
+    <option name="LAST_COMMIT_MESSAGE" value="add slider, remove input" />
   </component>
 </project>
